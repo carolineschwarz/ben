@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
     <head>
         <title>Benjamin Yates</title>
+        <link href="#" rel="home">
         <link href="/Users/carolineschwarz/Documents/coding/ben_grid/resources/style.css" type="text/css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
@@ -22,6 +23,7 @@
                     <br>
                     <br>
                     You can find examples of my work at <a href="https://www.mixcloud.com/benjaminyates/">Mixcloud</a>, and I occasionally post on <a href="https://twitter.com/benjaminwyates">Twitter</a> too. <br>
+                    <br>
                     Feel free to get in touch via <a href="mailto:benjamin.w.yates@gmail.com">email</a>.</p>    
              </div>      
             <div class="profile">
@@ -35,28 +37,52 @@
         <main>
             <div class="grid-main-container">
                 <article class="article">
-                    <img src="/Users/carolineschwarz/Desktop/ben_new/resources/images/EerieDistraction.jpg" alt="a flower and a white noise machine standing on a side board"/>
+                    <audio id="sound_eerie"  src="resources/audio/EerieDistraction.mp3" type="audio/mp3"></audio>
+                    <img  id="img_eerie" src="/Users/carolineschwarz/Desktop/ben_new/resources/images/EerieDistraction.jpg" alt="a flower and a white noise machine standing on a side board"/>
+                    <script>
+                        document.getElementById("img_eerie").addEventListener("click", function(){
+                            document.getElementById("sound_eerie").play();
+                        });
+                    </script>
                     <p class="title">Eerie Distraction</p>
                     <p class="tag">Recording</p>
                     <p class="description">Recorded in my apartment in Berlin, March 2020.</p>
                     <a href="https://audioboom.com/posts/7543448-eerie-distraction-berlin" target="blank">(Link)</a>
                 </article>
                 <article class="article">
-                    <img src="/Users/carolineschwarz/Desktop/ben_new/resources/images/400LuxOfGreen.png" alt="the sunrise on sea seen from a boat"/>
+                    <audio id="sound_greenray" src="resources/audio/GreenRay.mp3"></audio>
+                    <img id="img_greenray" src="/Users/carolineschwarz/Desktop/ben_new/resources/images/400LuxOfGreen.png" alt="the sunrise on sea seen from a boat"/>
+                    <script>
+                        document.getElementById("img_greenray").addEventListener("click", function(){
+                            document.getElementById("sound_greenray").play();
+                        });
+                    </script>
                     <p class="title">400 Lux of Green</p>
                     <p class="tag">Documentary</p>
                     <p class="description">Recorded on Ithaca, Greece, September / October 2019.</p>
                     <a href="https://www.mixcloud.com/benjaminyates/400-lux-of-green/" target="blank">(Link)</a>
                 </article>
                 <article class="article">
-                    <img src="/Users/carolineschwarz/Desktop/ben_new/resources/images/WhiteGold.jpg" alt="green and white asparagus"/>
+                    <audio id="sound_asparagus" src="resources/audio/WhiteGold.mp3"></audio>
+                    <img id="img_asparagus" src="/Users/carolineschwarz/Desktop/ben_new/resources/images/WhiteGold.jpg" alt="green and white asparagus"/>
+                    <script>
+                        document.getElementById("img_asparagus").addEventListener("click", function(){
+                            document.getElementById("sound_asparagus").play();
+                        });
+                    </script>
                     <p class="title">White Gold</p>
                     <p class="tag">Documentary</p>
                     <p class="description">Recorded in Berlin, April 2019.</p>
                     <a href="https://www.mixcloud.com/benjaminyates/white-gold/" target="blank">(Link)</a>
                 </article>
                 <article class="article">
-                    <img src="/Users/carolineschwarz/Desktop/ben_new/resources/images/Gleisdreieck.png" alt="a blurry subway on a bridge above a park"/>
+                    <audio id="sound_gleisdreieck" src="resources/audio/Gleisdreick.mp3"></audio>
+                    <img id="img_gleisdreieck" src="/Users/carolineschwarz/Desktop/ben_new/resources/images/Gleisdreieck.png" alt="a blurry subway on a bridge above a park"/>
+                    <script>
+                        document.getElementById("img_gleisdreieck").addEventListener("click", function(){
+                            document.getElementById("sound_gleisdreieck").play();
+                        });
+                    </script>
                     <p class="title">Gleisdreieck</p>
                     <p class="tag">Recording</p>
                     <p class="description">Recorded in Gleisdreieck, Berlin, March 2020.</p>
@@ -83,3 +109,4 @@
         </footer>
     </body>
 </html>
+
